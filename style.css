@@ -1,0 +1,200 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #6a5acd;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* Header styling */
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.head {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 5px;
+}
+
+.heading img {
+  width: 60px;
+  height: 60px;
+}
+
+.description {
+  font-size: 17px;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 10px 20px;
+  max-width: 700px;
+}
+
+/* Form Section */
+.input-output {
+  display: flex;
+  gap: 25px;
+  padding: 3rem;
+}
+.form-section {
+  width: 30rem;
+  background-color: #4b0082;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.form-section h2 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+form input {
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+}
+
+form button {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: red;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #2e8b57;
+}
+
+/* Display Section */
+
+.display-section {
+  width: 60rem;
+  max-height: 500px;
+
+  background-color: #2e8b57;
+  padding: 20px;
+  border-radius: 12px;
+  overflow: auto;
+}
+
+.display-section h2 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  table-layout: fixed;
+}
+
+thead {
+  background-color: #006400;
+}
+
+thead th {
+  padding: 12px;
+  color: #fff;
+}
+thead th,
+tbody td {
+  padding: 12px;
+  word-break: break-word;
+}
+
+tbody td {
+  padding: 10px;
+  background-color: #3cb371;
+  border-bottom: 1px solid #2e8b57;
+}
+
+tbody tr:hover {
+  background-color: #2e8b57;
+}
+
+/* ----edit button and delete button----- */
+.edit-button {
+  background-color: orange;
+  border: none;
+  padding: 5px 10px;
+  color: #fff;
+  margin-right: 5px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.delete-button {
+  background-color: red;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+/*-------- Responsive Design */
+@media (max-width: 768px) {
+  .input-output {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .form-section,
+  .display-section {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .display-section {
+    overflow-x: auto;
+  }
+
+  table {
+    min-width: 600px;
+  }
+
+  .heading {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .head {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .description {
+    font-size: 16px;
+    padding: 10px;
+  }
+}

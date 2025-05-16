@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="heading">
+            <div class="head">
+                <img src="student.png" alt="student">
+                <h1>Student Record Management System</h1>
+            </div>
+            <div class="description">
+                <p>This system is designed to help educators and staff manage student contact and ID records
+                    efficiently.
+                    Don't
+                    worry — you can always edit or remove a student’s data whenever needed!
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <section class="input-output">
+        <div class="form-section">
+            <h2>Register New Student</h2>
+            <form id="studentForm">
+                <label for="name">Student Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter full name" required />
+
+                <label for="studentId">Student ID:</label>
+                <input type="number" id="studentId" name="studentId" placeholder="Enter numeric ID" required />
+
+                <label for="email">Email ID:</label>
+                <input type="email" id="email" name="email" placeholder="Enter valid email" required />
+
+                <label for="contact">Contact No:</label>
+                <input type="number" id="contact" name="contact" placeholder="Enter 10-digit number" required />
+
+                <button type="submit">Add Student</button>
+
+            </form>
+        </div>
+        <div class="display-section">
+            <h2>Registered Students</h2>
+            <table id="studentTable">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Student ID</th>
+                        <th>Email</th>
+                        <th>Contact</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+</body>
+
+</html>
